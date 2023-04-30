@@ -923,7 +923,7 @@ public class jack_constant extends GhidraScript {
 				if (def.getInput(0).isConstant() && def.getInput(1).isConstant()) {
 					long space = def.getInput(0).getOffset();
 					long offset = def.getInput(1).getOffset();
-					if (space != funcEntry.getAddressSpace().getBaseSpaceID()) {
+					if (space != funcEntry.getAddressSpace().getSpaceID()) {
 						break;
 					}
 					try {
